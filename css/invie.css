@@ -1,0 +1,330 @@
+/*body {
+	background: peru;
+}*/
+
+/*tipo de selector {
+			propiedad: valor;
+			propiedad-2: valor;
+}*/
+
+/*selector universal*/
+/* * {
+	border: 1px solid red;
+	margin: 10px;
+}*/
+
+/*Selector de etiqueta*/
+/*header {
+	background: blue;
+}
+
+section {
+	background: purple;
+}*/
+
+/*Selector descendente*/
+/*article h3 { /*haciendo que afecte solo a los h3 que estan dentro de un article*/
+/*	color: green;
+}*/
+
+/*Selectores de clase*/
+/*.title-a {
+	background: yellow;
+}
+
+.title-b {
+	background: salmon;
+}*/
+
+/*Selector de id*/
+/*#header {
+	border: 3px solid black;
+}
+
+#portada {
+	border: 3px solid orange;
+}
+
+#guitarras {
+	border: 3px solid brown;
+}*/
+
+/*cdn extraido de google fonts*/
+/*font-family: 'Montserrat', sans-serif;
+*/
+/** {*/
+	/*width: ancho*/
+	/*height: alto*/
+
+	/*padding: 10px;*/
+
+	/*padding-top: : 10px;
+	padding-left: 15px;
+	padding-right: 13px;
+	padding-bottom: 5px;*/
+
+	/*padding: 10px 13px 5px 15px;*/
+
+	/*margin: 10px;*/
+
+	/*margin-top: : 10px;
+	margin-left: 15px;
+	margin-right: 13px;
+	margin-bottom: 5px;*/
+
+	/*border: 2px solid red;*/
+/*}*/
+
+
+
+body {
+	/*cdn extraido de google fonts*/
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+
+table {
+	width: 100%; /*va ocupar todo el espacio del padre*/
+}
+
+th {
+	background: #273b47;
+	color: white;
+	padding: 10px 20px;/*margen superior e inferior de 10 y margenes a los costados de 20*/
+	text-align: left;/*alinear el contenido de la cabecera a la izquierda*/
+}
+
+td {
+	padding: 20px;
+}
+
+table, td, th {
+	border: 1px solid #273b47;/*pa que tengan las divisiones de las filas y las celdas*/
+	border-collapse: collapse; /*para que tenga divisiones simples y no la division doble que viene por defecto*/
+}
+
+input, textarea {
+	outline: 0;/*si se hace focus en en los input no se remarca*/
+}
+
+input:focus, textarea:focus {/*son seudoclases para que cuando se haga focus en un input o textarea entonces se realice*/
+	background: lightgray;
+}
+
+.contenedor {/*esta hasta arriba porque es una utilidad*/
+	width: 800px;/*el ancho del proyecto en la imagen de fondo*/
+	margin: auto;/*en automatico el elemento se centra*/
+	position: relative;/*colocamos esto porque el menu tenia una position absulete y se estaba encontrando con el body*/
+}
+
+.background {/*lo convertimo en una clase porque lo usaremos en index como en precios*/
+	background-image: url('../images/background.png');/*secun las carpetas tenemos que retroceder una carpeta y luego entrar a images entonces se utiliza ../ para retroceder y luego la ruta normal*/
+	background-size: cover; /*hace que la imagen tome el mejor tamaño posible para ocupar todo el tamaño disponible*/
+}
+
+.button {
+	border-radius: 12px;
+	border: none;
+	background: #fd324e;
+	color: white;
+	padding: 7px 15px;
+	cursor: pointer;/*cuando el puntero pase por el boton cambiara a la figura de un dedo*/
+	font-size: 18px;
+	background: linear-gradient(to left, #fe344e, #ff7250);/*para que se produzca un cambio de color interno en el boton que vaya de derecha a izquierda */
+	text-decoration: none;/*que no tenga subrayado bajo*/
+}
+
+
+.titulo {
+	font-size: 70px;/*font size tamaño de fuente*/
+	/*cdn extraido de google fonts*/
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 0;
+	line-height: 80px;
+	margin-top: 70px;
+}
+
+.title-a {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.guitarras h2 {/*solo para afectar el h2 dentro de la clase guitarras*/
+	font-size: 35px;
+	/*cdn extraido de google fonts*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+.title-b {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.portada {
+	
+	color: white;/*todos el texto que este dentro de la clase portada*/
+	padding: 20px;
+	
+	height: 500px;/*el alto*/
+}
+
+.portada button {
+	margin-bottom: 70px;
+}
+
+.guitarras {
+	color: #1F313C;
+	margin-bottom: 60px;
+}
+
+.menu {
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.logotipo {
+	display: inline-block;
+	margin-left: 0;
+}
+
+
+
+
+.guitarra {
+	margin: 10px 10px 40px 10px;
+	padding: 10px;
+	/*overflow: hidden;*/
+	border: 1px solid #1F313C;
+	border-radius: 8px;
+}
+
+.guitarra ol {
+	padding: 0;
+}
+
+.derecha {
+	float: right;
+	position: relative;
+	top: -127px;
+}
+
+.izquierda {
+	float: left;
+	position: relative;
+}
+
+.contenedor-guitarra-a {
+	padding-left: 20px;
+}
+
+.contenedor-guitarra-b {
+	margin-left: 370px;
+	position: relative;
+	bottom: 90px;
+	/*padding-left:*/ 
+}
+
+.header {
+	position: relative;
+}
+
+.footer {
+	background: #273b47;
+	padding: 40px 10px;
+}
+
+.contacto img {
+	display: block;/* los elementos que se encuentren seguidos de la imagen se coloquen abajo de ella*/
+}
+
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none; /*sin ningun tipo de decoracion en el texto en este caso aparecian con linea baja*/
+	margin: 10px 10px 10px 0;/*cuando utilizamos flex en contacto entonces pa que el telefono y el email no esten pegados hacia arriba damos margen*/
+}
+
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacto {
+	display: flex;
+	width: 300px;/* le damos un tamaño para que el wrap de abajo funcione como queremos*/
+	flex-wrap: wrap;
+	align-items: center;/*para que la imagen no se vea afectada luego de agregar los padding en el formulario*/
+}
+
+.formulario { /*en el formulario dividimos en dos clases col1 col2 pa que les afecte el flex*/
+	display: flex;
+	width: 400px;/*le damos un tamaño pa que no interfiera con el contacto*/
+	color: white;
+	/*margen interno superior y a los costados*/
+}
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;/* pa que tengan una disposicion en columna*/
+}
+
+.col1 {
+	margin-right: 15px;
+}
+
+.intereses label { /*para modificar el ckeckbox*/
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 10px ;/*para darle un margen inferior a los label, sexo e intereses*/
+}
+
+.sexo {
+	margin-top: 10px;/*margen superior solo a sexo*/
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+
+
+.menu li:before {
+	content:'∘';
+	font-size: 25px;
+	line-height: 20px;/*es un alto de linea para que no se mueva la caja por el fontzise*/
+	/*color: blue;//colocar color a los pseudoelemntos*/
+	color: white;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;/*para quitar el subrayado bajo al menu de la cabecera*/
+}
+
+.titulo span {
+	text-decoration: underline;/*coloca subrayado bajo*/
+}
+
+.guitarra.b {/*el selector va pegado porque solo le colocarmes el estilo a la segunda clase b pero referenciando la clase guitarra por eso esta pegado*/
+	height: 190px;
+}
+
+.col2 .button {
+	margin-top: 15px;
+}
+
+.tabla {
+	margin: 50px 0;
+}
